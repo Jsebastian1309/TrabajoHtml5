@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html</title>
-    <link rel="stylesheet" href="css">
-    <script></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script> src="JavaScrip"</script>
+    
+       
 </head>
 <body>
     <Header>
@@ -23,20 +25,62 @@
     <article>
     <h2>Nuestras Ubicaciones</h2>
     <p>*Colombia</p>
-    <a href=""> 1 Bogota</a> <br>
-    <a href=""> 2 Cali</a> <br>
-    <a href=""> 3 Medellìn</a> <br>
-    <a href=""> 4 Bucaramanga</a> <br>
+    <a href="https://www.google.com/maps/place/Bogot%C3%A1/@4.6684601,-74.2901048,11z/data=!4m6!3m5!1s0x8e3f9bfd2da6cb29:0x239d635520a33914!8m2!3d4.7109886!4d-74.072092!16zL20vMDFkenlj?hl=es"> 1 Bogotà</a> <br>
+    <a href="https://www.google.com/maps/place/Cali,+Valle+del+Cauca/@3.3950619,-76.5957045,12z/data=!4m6!3m5!1s0x8e30a6f0cc4bb3f1:0x1f0fb5e952ae6168!8m2!3d3.4516467!4d-76.5319854!16zL20vMDFwc3Nm?hl=es"> 2 Cali</a> <br>
+    <a href="https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/@6.2441988,-75.6512521,12z/data=!3m1!4b1!4m6!3m5!1s0x8e4428dfb80fad05:0x42137cfcc7b53b56!8m2!3d6.2476376!4d-75.5658153!16zL20vMDF4XzZz?hl=es"> 3 Medellìn</a> <br>
+    <a href="https://www.google.com/maps/place/Bucaramanga,+Santander/@7.1192047,-73.1679976,13z/data=!3m1!4b1!4m6!3m5!1s0x8e68157af751c0ed:0x75a0e4551148c36c!8m2!3d7.119349!4d-73.1227416!16zL20vMDM3eXNj?hl=es"> 4 Bucaramanga</a> <br>
     <article>
     <p>* Lugares Del Mundo</p>
-    <a href="">Ottawa</a> <br>
-    <a href="">Sydney</a>
+    <a href="https://www.google.com/maps/place/Ottawa,+Ontario,+Canad%C3%A1/@45.249814,-76.0804386,10z/data=!3m1!4b1!4m6!3m5!1s0x4cce05b25f5113af:0x8a6a51e131dd15ed!8m2!3d45.4215296!4d-75.6971931!16zL20vMDVrc2g?hl=es">Ottawa</a><br>
+    <a href="https://www.google.com/maps/place/Sidney,+Nueva+Escocia,+Canad%C3%A1/@46.1426311,-60.214282,13z/data=!3m1!4b1!4m6!3m5!1s0x4b67fb367e723415:0xa783539b7b308087!8m2!3d46.1367899!4d-60.194224!16zL20vMGZ6MjU?hl=es">Sydney</a>
     </article>
     <br>
     <br>
     <a href="https://twitter.com/login">Twitter</a>
-    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.facebook.com/">| Facebook |</a>
     <a href="https://flickr.com/">Flichr</a>
+
+
+    <p>Cual es tu color Favorito:</p>
+    <button><div class="colorfav tamañocolorfav"></div></button>
+    <br>
+    <p>Mes de ingreso</p>
+    <label for="mes-año"></label>
+    <input type="month"  id="mes-año" name="mes-año">
+    <p>Semana de Vacaciones</p>
+    <label for="semana-año"></label>
+    <input type="week" id="semana-año" name="semana-año">
+    <p>Cual es tu fecha de nacimiento</p>
+    <label for="dia-mes-año"></label>
+    <input type="date" id="dia-mes-año" name="dia-mes-año">
+    <p>Fecha y hora de registro</p>
+    <label for="fecha">Fecha y hora:</label>
+    <input type="datetime-local" id="fecha" name="fecha">
+    <p>Hora de salida</p>
+    <label for="time"></label>
+    <input type="time" id="time" name="time"> 
+    <p>Subir Documento de identidad:</p>
+    
+      
+ 
+
+
+    <footer>
+        "Nunca sabes lo que puede traerte la marea" <em> TOM HANKS</em> <br>
+        Centro Minero <br>
+        <em>  Sogamoso,Km 1 via verreda morca sector bata</em>
+        <p id="date"></p>
+        <script>
+            const dateElem = document.getElementById("date");
+            setInterval(() => {
+              const date = new Date();
+              const options = { Weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'};
+              const formattedDate = date.toLocaleDateString('es-ES', options);
+              dateElem.innerText = formattedDate;
+            }, 1000);
+          </script>
+    </footer>
+
 </section>
 </main>
 </Header>
