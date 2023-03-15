@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <script> src="JavaScrip"</script>
     
-       
 </head>
 <body>
     <Header>
         <main>
            <!-- “Ejercicio 01 – Taller HTML -->
     <h1>Html</h1>
+           <!-- “Ejercicio 02 – Taller HTML -->
     <img src="Html.png" alt="Logo Html">
     <section>
     <h1>Informacion</h1>
     <h3>Definicion Html</h3>
     <article>
-    <p><b>Html</b> Sigla en inglés de <b><em>HyperText Markup Language</b></em>(lenguaje de marcas de hipertexto), hace referencia al  <a href="">lenguaje de marcado</a>  para la elaboración de <a href="">páginas web</a>. Es un estándar a cargo del <mark> World Wide Web Consortium </mark> <a href="">(W3C)</a>  o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologias ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la <a href="">World Wide Web</a>  (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.- Este lenguaje esta iniuenciade dirigido por la w3c</p>
+    <p><b>Html</b> Sigla en inglés de <b><em>HyperText Markup Language</b></em>(lenguaje de marcas de hipertexto), hace referencia al  <a href="https://fp.uoc.fje.edu/blog/que-es-el-lenguaje-de-marca-o-marcado-html-y-xml/">lenguaje de marcado</a>  para la elaboración de <a href="https://concepto.de/pagina-web/">páginas web</a>. Es un estándar a cargo del <mark> World Wide Web Consortium </mark> <a href="https://www.w3.org/">(W3C)</a>  o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologias ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la <a href="https://www.w3.org/">World Wide Web</a>  (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.- Este lenguaje esta iniuenciade dirigido por la w3c</p>
     </article>
     <article>
     <h2>Nuestras Ubicaciones</h2>
@@ -39,10 +39,73 @@
     <a href="https://twitter.com/login">Twitter</a>
     <a href="https://www.facebook.com/">| Facebook |</a>
     <a href="https://flickr.com/">Flichr</a>
-
-
-    <p>Cual es tu color Favorito:</p>
-    <button><div class="colorfav tamañocolorfav"></div></button>
+   <!-- “Ejercicio 03 – Taller HTML -->
+    <hr>
+    <h2> HTML</h2>
+    Estructura de página etiquetas <br>
+    <h2>CSS</h2> 
+    Diseño implementación  de estilos <br>
+    <h2>JavaScript</h2>
+    Lenguaje de Programación que da funcionalidad a los elementos
+    <br>
+    <br>
+    <table border="2"  >
+    <caption> <b>Eventos</b></caption>
+    <tr>
+        <td class="colorTable"> <b> Ubicación</b> </td><td><b>Tema</b></td>
+    </tr>
+    <tr>
+        <td class="colorTable"> New York</td><td>JavaScript & jQuery</td>
+    </tr>
+    <tr>
+        <td class="colorTable"> San Francisco </td> <td> HTML & CSS</td>
+    </tr>   
+    <tr>
+        <td class="colorTable"> <b> Ubicación</b> </td><td><b>Tema</b></td>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1" class="margen">
+    <tr>
+        <td>
+    <label for="name">Buscar en el sitio:</label>
+    <input type="text" id="name" name="html" required
+       minlength="4" maxlength="8" size="10">
+    <input type="button" value="Buscar">     
+    </td>
+    </tr>
+    </table>
+    <h1>¡Regístrate!</h1>
+    <label for="name1">Fecha Ingreso:</label> <br>
+    <input type="date" name="name1" id="name1" placeholder="14/03/2023" required> 
+    <br>
+    <label for="name2">Nombres:</label> <br>
+    <input type="text" name="name2" id="name2" placeholder="Juan" required>
+    <br>
+    <label for="name3">Apellidos:</label><br>
+    <input type="text" name="name3" id="name3" placeholder="Reyes" required>
+    <br>
+    <label for="name4"> Correo:</label><br>
+    <input type="email" name="name4" id="name4" placeholder="Juanre12@misena.edu.co" required>
+    <br>
+    <label for="name5"> Número de teléfono: </label><br>
+    <input type="number" name="name5" id="name5" placeholder="3xxxxxxxx" required>
+    <br>
+    <label for="name6"> Número de Documento:</label><br>
+    <input type="number" name="name6" id="name6" placeholder="##########" required>
+    <br>
+    <label for="name7"> URL Perfil LikendIn:</label> <br>
+    <input type="url" name="name7" id="name7" placeholder="https://www.linkedin.com/" required >
+    <br>
+    <label for="name8">Contraseña (Minímo 8 Caracteres):</label><br>
+    <input type="password" name="name8" id="name8" placeholder="*********" required>
+    <br>
+    <label for="name9">Eres Mayor de Edad:</label><br>
+    <input type="checkbox" name="name9" id="name9">
+    <br>
+	  <label for="colorInput">Selecciona un color:</label>
+	  <input type="color" id="colorInput" name="colorInput" value="#f6b73c">
     <br>
     <p>Mes de ingreso</p>
     <label for="mes-año"></label>
@@ -54,13 +117,77 @@
     <label for="dia-mes-año"></label>
     <input type="date" id="dia-mes-año" name="dia-mes-año">
     <p>Fecha y hora de registro</p>
-    <label for="fecha">Fecha y hora:</label>
+    <label for="fecha"></label>
     <input type="datetime-local" id="fecha" name="fecha">
     <p>Hora de salida</p>
     <label for="time"></label>
     <input type="time" id="time" name="time"> 
-    <p>Subir Documento de identidad:</p>
-    
+    <br>
+    <br>
+    <label for="fileInput">Subir Documento de identidad</label><br>
+	  <input type="file" id="fileInput" name="fileInput" accept=".pdf, .jpg, .jpeg">
+    <br>
+    <br>
+    <fieldset><legend>Genero:</legend>
+    <div>
+      <label>
+        <input type="radio" name="genero" value="masculino">
+        <span class="circle"></span>
+        Masculino
+      </label>
+      <label>
+        <input type="radio" name="genero" value="femenino">
+        <span class="circle"></span>
+        Femenino
+      </label>
+    </div>
+    </fieldset>
+    <p>Nivel de conocimiento html</p>
+    <label for="rango"></label>
+    <input type="range" id="rango" name="rango" min="0" max="10" step="5">
+    <br>
+    <br>
+    <label for="lenguaje">Tecnologia Preferida:</label>
+    <br>
+    <select id="lenguaje" name="lenguaje">
+    <optgroup label="Back-end">
+    <option value="php" selected>PHP</option>
+    <option value="java">Java</option>
+    <option value="python">Python</option>
+    </optgroup>
+    <optgroup label="Front-end">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaScript</option>
+    </optgroup>
+    </select>
+    <br>
+    <br>
+    <label for="hobbys">Hobby preferido</label>
+    <br>
+    <input type="text" id="hobbys" name="hobbys" list="lista_hobbys">
+    <datalist id="lista_hobbys">
+    <option value="Leer">
+    <option value="Nadar">
+    <option value="Caminar">
+    <option value="Ver tv">
+    <option value="Videojuegos">
+    </datalist>
+    <br>
+    <br>
+    <p>Experiencia:</p>
+    <textarea name="campo-de-experiencia" rows="5" cols="33" placeholder="Ingrese su experiencia aquí"></textarea><br>
+    <br>
+    <button type="reset" class="" name="myReset">Resetablecer</button>
+    <button type="submit" class="" name="mySubmit">Registrarse</button>
+    <button type="image" class="myButton" name="myImage" src="path/to/image.jpg">click me</button>
+     <blockquote>
+      <p><strong>Nota</strong> <span> recomendamos que las implementaciones de hojas de estilo proporcionen un mecanismo para insertar signos de puntuacion de citas antes y despues de una cita delimitada por un BLOCKQUOTE de un modo apropiado segun el contexto del idioma actual y el grado de anidamiento de las cita</span></p>
+     </blockquote>
+    </body>
+
+ 
+
       
  
 
